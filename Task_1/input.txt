@@ -1,8 +1,11 @@
 # This is commentary, lol!!!
+# Now we try this: a = 4, b = 9
 DEFINE a 4
 PUSH a
 DEFINE b 9
 PUSH b
+# Then sqrt(b), pop(b), sqrt(a), push (b), sum
+# We have to get 11.0...
 SQRT
 POP
 SQRT
