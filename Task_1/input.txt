@@ -1,0 +1,11 @@
+# This is commentary, lol!!!
+DEFINE a 4
+PUSH a
+DEFINE b 9
+PUSH b
+SQRT
+POP
+SQRT
+PUSH b
+SUM
+PRINT

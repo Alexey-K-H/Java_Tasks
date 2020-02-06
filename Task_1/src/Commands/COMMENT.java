@@ -14,8 +14,10 @@ public class COMMENT implements Command {
         }
         else{
             for(int i = 1; i < arguments.length; i++){
-                System.out.println(arguments[i]);
+                System.out.print(arguments[i]);
+                System.out.print(" ");
             }
+            System.out.println();
         }
     }
 }

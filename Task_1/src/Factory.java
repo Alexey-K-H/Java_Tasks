@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Stack;
+import java.util.logging.Logger;
 
 public class Factory {
     private static Factory factory;
@@ -15,15 +16,19 @@ public class Factory {
     private Map<String, Double> map;
     private Class factoryClass;
     public static final Properties p;
+    private final static Logger log = Logger.getLogger(Factory.class.getName());
 
     //Инициализация (Properties p)
     static {
         try{
-            InputStream resource = Factory.class.getClassLoader().getResourceAsStream("Config.properties");
+            InputStream resource = Factory.class.getClassLoader().getResourceAsStream("Config.properties");//Загрузить информацию о классах
             p = new Properties();
-            p.load(resource);
+
+            if(resource != null)
+               p.load(resource);
+
         }catch (IOException ex){
-            throw new RuntimeException();
+            throw new RuntimeException();//Если данный о классах не были загружены
         }
     }
 
@@ -39,6 +44,7 @@ public class Factory {
         return factory;
     }
 
+    //For unit-tests
     public Stack<Double> getStack(){
         return stack;
     }
@@ -64,6 +70,7 @@ public class Factory {
                 }
             }
         }catch (IllegalAccessException ex){
+            log.severe("There is no access to field!");
             command = null;
         }
     }
@@ -71,9 +78,10 @@ public class Factory {
     public Command makeCommand(String[] arguments){
         Command command = null;
         String className;
-        if(arguments.length > 3){
+        /*if(arguments.length > 3){
+            log.severe("Wrong amount of arguments!");
             return null;
-        }
+        }*/
 
         try{
             if(arguments[0].equals("#")){
@@ -83,29 +91,29 @@ public class Factory {
             className = p.getProperty(arguments[0]);
 
             if(className == null){
-
+                log.warning("Unexpected command. What do you mean?");
             }
             else
             {
                 factoryClass = Class.forName(className);
+                //Создаем экземпляр класса и проверяем что он создан на основе Command
                 if(factoryClass.newInstance() instanceof Command){
                     command = (Command) factoryClass.newInstance();
-                    fillCommand(command, arguments);
+                    fillCommand(command, arguments);//Вносим информацию в данную команду(аргументы)
                 }
                 else
                 {
-
+                    log.severe("Cannot create command from this object");
                 }
             }
         } catch (ClassNotFoundException ex) {
-
+            log.severe("Class not found!");
         } catch (IllegalAccessException ex){
-
+            log.severe("Illegal access to class!");
         } catch (InstantiationException ex){
-
+            log.severe("Fail instance of this object!");
         }
 
         return command;
     }
-
 }
