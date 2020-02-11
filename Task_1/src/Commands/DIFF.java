@@ -16,7 +16,7 @@ public class DIFF implements Command {
     public void do_command() {
         if(arguments.length != 1){
             System.out.println("Not valid command");
-        }else if(stack.size() > 2){
+        }else if(stack.size() >= 2){
             stack.push(stack.pop() - stack.pop());
         }else{
             System.out.println("Not enough values in stack");
