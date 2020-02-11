@@ -23,6 +23,7 @@ public class Main {
                         if ((arguments = bufferedReader.readLine()) == null) {
                             break;
                         } else {
+                            log.info("Create command...");
                             command = factory.makeCommand(arguments.split(" "));
                             if (command != null)
                                 command.do_command();
@@ -44,6 +45,7 @@ public class Main {
                         break;
                     }
                     else{
+                        log.info("Create command...");
                         command = factory.makeCommand(arguments.split(" "));
                         if(command != null)
                             command.do_command();
