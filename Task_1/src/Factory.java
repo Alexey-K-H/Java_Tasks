@@ -4,6 +4,7 @@ import contex_exe.Block;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -97,8 +98,8 @@ public class Factory {
             {
                 factoryClass = Class.forName(className);
                 //Создаем экземпляр класса и проверяем что он создан на основе Command
-                if(factoryClass.newInstance() instanceof Command){
-                    command = (Command) factoryClass.newInstance();
+                if(factoryClass.getDeclaredConstructor().newInstance() instanceof Command){
+                    command = (Command) factoryClass.getDeclaredConstructor().newInstance();
                     fillCommand(command, arguments);//Вносим информацию в данную команду(аргументы)
                 }
                 else
@@ -112,6 +113,8 @@ public class Factory {
             log.severe("Illegal access to class!");
         } catch (InstantiationException ex){
             log.severe("Fail instance of this object!");
+        } catch (NoSuchMethodException | InvocationTargetException e) {
+            log.severe("Fail to get constructor of this object!");
         }
 
         return command;
