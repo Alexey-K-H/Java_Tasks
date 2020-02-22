@@ -1,12 +1,30 @@
 import Commands.Command;
 
 import java.io.*;
+import java.util.Arrays;
+import java.util.logging.FileHandler;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class Main {
-    private final static Logger log = Logger.getLogger(Main.class.getName());
+    //private final static
 
-    public static void main(String []args){
+    public static void main(String []args) throws IOException {
+        Logger log = Logger.getLogger(Main.class.getName());
+        FileHandler fileHandler;
+
+        try{
+            fileHandler = new FileHandler("Log_file.log");
+            log.addHandler(fileHandler);
+            SimpleFormatter formatter = new SimpleFormatter();
+            fileHandler.setFormatter(formatter);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        log.setUseParentHandlers(false);
+
+
         Factory factory = Factory.getInstance();
         String arguments;
         Command command;
@@ -23,7 +41,7 @@ public class Main {
                         if ((arguments = bufferedReader.readLine()) == null) {
                             break;
                         } else {
-                            log.info("Create command...");
+                            log.info("Create command..." + Arrays.toString(arguments.split(" ", 1)));
                             command = factory.makeCommand(arguments.split(" "));
                             if (command != null)
                                 command.do_command();

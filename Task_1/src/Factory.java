@@ -9,7 +9,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Stack;
+import java.util.logging.FileHandler;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class Factory {
     private static Factory factory;
@@ -33,12 +35,18 @@ public class Factory {
         }
     }
 
-    private Factory(){
+    private Factory() throws IOException {
         this.stack = new Stack<>();
         this.map = new HashMap<>();
+
+        FileHandler fileHandler = new FileHandler("Log_Factory.log");
+        log.addHandler(fileHandler);
+        SimpleFormatter simpleFormatter = new SimpleFormatter();
+        fileHandler.setFormatter(simpleFormatter);
+        log.setUseParentHandlers(false);
     }
 
-    public static Factory getInstance(){
+    public static Factory getInstance() throws IOException {
         if(factory == null){
             factory = new Factory();
         }
@@ -72,17 +80,13 @@ public class Factory {
             }
         }catch (IllegalAccessException ex){
             log.severe("There is no access to field!");
-            command = null;
         }
     }
 
     public Command makeCommand(String[] arguments){
         Command command = null;
         String className;
-        /*if(arguments.length > 3){
-            log.severe("Wrong amount of arguments!");
-            return null;
-        }*/
+
 
         try{
             if(arguments[0].equals("#")){

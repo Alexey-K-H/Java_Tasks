@@ -1,0 +1,32 @@
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Open input file...
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[# This is commentary, lol!!!]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[# Now we try this: a = 4, b = 9]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[DEFINE a 4]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[PUSH a]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[DEFINE b 9]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[PUSH b]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[# Then sqrt(b), pop(b), sqrt(a), push (b), sum]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[# We have to get 11.0...]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[SQRT]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[POP]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[SQRT]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[PUSH b]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[SUM]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[PRINT]
+Feb 22, 2020 11:27:29 PM Main main
+INFO: Create command...[lol]
