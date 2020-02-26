@@ -17,7 +17,7 @@ public class Factory {
     private static Factory factory;
     private Stack<Double> stack;
     private Map<String, Double> map;
-    private Class factoryClass;
+    private Class<?> factoryClass;
     public static final Properties p;
     private final static Logger log = Logger.getLogger(Factory.class.getName());
 

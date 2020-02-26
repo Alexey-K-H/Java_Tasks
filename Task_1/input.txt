@@ -12,3 +12,4 @@ SQRT
 PUSH b
 SUM
 PRINT
+stack
