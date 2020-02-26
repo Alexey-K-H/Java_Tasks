@@ -1,0 +1,39 @@
+февр. 27, 2020 1:07:48 AM Main main
+INFO: Open input file...
+
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Start process...
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[# This is commentary, lol!!!]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[# Now we try this: a = 4, b = 9]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[DEFINE a 4]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[PUSH a]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[DEFINE b 9]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[PUSH b]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[# Then sqrt(b), pop(b), sqrt(a), push (b), sum]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[# We have to get 11.0...]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[SQRT]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[POP]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[SQRT]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[PUSH b]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[SUM]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[PRINT]
+февр. 27, 2020 1:07:49 AM Calculator ran_calc
+INFO: Create command...[stack]
+февр. 27, 2020 1:07:49 AM Factory make_command
+WARNING: Unexpected command: stack what do you mean?
+февр. 27, 2020 1:07:49 AM Main main
+FINE: End of the application work.
