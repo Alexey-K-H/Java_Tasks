@@ -1,25 +1,25 @@
 package Commands;
 
 import Context.Context;
+import Exceptions.CalculatorException;
+import Exceptions.Wrong_amount_of_args_exception;
+import Exceptions.Wrong_format_value_exception;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class SQRT implements Command {
-    private final static Logger logger = Logger.getLogger(SQRT.class.getName());
 
     @Override
-    public void do_command(Context context, String[] arguments) {
+    public void do_command(Context context, String[] arguments) throws CalculatorException {
         double value;
 
         if(arguments.length != 1){
-            logger.log(Level.WARNING, "Not valid command");
+            throw new Wrong_amount_of_args_exception("Not enough args for SQRT");
         }
         value = context.pop();
         if(value >= 0){
             context.push(Math.sqrt(value));
         }else{
-            logger.log(Level.WARNING, "Sqrt for negative number is impossible");
+            throw new Wrong_format_value_exception("Sqrt from negative number cannot be got!");
         }
     }
 }

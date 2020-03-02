@@ -8,11 +8,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Factory {
-    private static Factory factory;
-    public static final Properties p;
+    private volatile static Factory factory = null;
+    public final Properties p;
     private final static Logger logger = Logger.getLogger(Factory.class.getName());
 
-    static {
+    private Factory(){
         try{
             InputStream resource = Factory.class.getClassLoader().getResourceAsStream("Config.properties");
             p = new Properties();
@@ -26,11 +26,13 @@ public class Factory {
         }
     }
 
-    private Factory(){}
-
     public static Factory getInstance(){
         if(factory == null){
-            factory = new Factory();
+            synchronized (Factory.class) {
+                if(factory == null) {
+                    factory = new Factory();
+                }
+            }
         }
         return factory;
     }
@@ -47,7 +49,7 @@ public class Factory {
                 className = p.getProperty(arguments[0]);
 
             if(className == null){
-                logger.log(Level.WARNING, "Unexpected command: " + arguments[0] + " what do you mean?");
+                logger.log(Level.WARNING, "Unexpected command: (" + arguments[0] + ") What do you mean?");
             }
             else
             {

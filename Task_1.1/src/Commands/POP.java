@@ -1,21 +1,21 @@
 package Commands;
 
 import Context.Context;
+import Exceptions.CalculatorException;
+import Exceptions.Stack_size_exception;
+import Exceptions.Wrong_amount_of_args_exception;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class POP implements Command {
-    private final static Logger logger = Logger.getLogger(POP.class.getName());
 
     @Override
-    public void do_command(Context context, String[] arguments) {
+    public void do_command(Context context, String[] arguments) throws CalculatorException {
         if(arguments.length != 1){
-            logger.log(Level.WARNING, "Not valid command");
+            throw new Wrong_amount_of_args_exception("Wrong count of args for POP command");
         } else if(context.stack_size() > 0)
             context.pop();
         else {
-            logger.log(Level.WARNING, "Stack is empty");
+            throw new Stack_size_exception("Stack is empty");
         }
     }
 }

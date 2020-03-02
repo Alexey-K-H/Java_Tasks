@@ -1,21 +1,20 @@
 package Commands;
 
 import Context.Context;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import Exceptions.CalculatorException;
+import Exceptions.Stack_size_exception;
+import Exceptions.Wrong_amount_of_args_exception;
 
 public class SUM implements Command {
-    private final static Logger logger = Logger.getLogger(SUM.class.getName());
 
     @Override
-    public void do_command(Context context, String[] arguments) {
+    public void do_command(Context context, String[] arguments) throws CalculatorException {
         if(arguments.length != 1){
-            logger.log(Level.WARNING, "Not valid command");
+            throw new Wrong_amount_of_args_exception("Not enough args for SUM");
         }else if(context.stack_size() >= 2){
             context.push(context.pop() + context.pop());
         }else{
-            logger.log(Level.WARNING, "Not enough values in stack");
+            throw new Stack_size_exception("Not enough values in stack");
         }
     }
 }

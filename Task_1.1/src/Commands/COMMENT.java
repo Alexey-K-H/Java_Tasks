@@ -1,18 +1,16 @@
 package Commands;
 
 import Context.Context;
+import Exceptions.CalculatorException;
+import Exceptions.Wrong_amount_of_args_exception;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class COMMENT implements Command {
 
-    private final static Logger logger = Logger.getLogger(COMMENT.class.getName());
-
     @Override
-    public void do_command(Context context, String[] arguments) {
+    public void do_command(Context context, String[] arguments) throws CalculatorException {
         if(arguments.length < 2){
-            logger.log(Level.WARNING, "Not a valid command" + arguments[0]);
+            throw new Wrong_amount_of_args_exception("This is empty commentary!");
         }
         else{
             for(int i = 1; i < arguments.length; i++){

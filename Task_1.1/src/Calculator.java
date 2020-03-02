@@ -1,5 +1,6 @@
 import Commands.Command;
 import Context.Context;
+import Exceptions.CalculatorException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -38,6 +39,12 @@ public class Calculator {
                         command.do_command(context, arguments.split(" "));
                     }
                 }
+            }
+            catch (CalculatorException ex){
+                logger.log(Level.WARNING, "Calculator Error:", ex);
+            }
+            catch (ArithmeticException ex){
+                logger.log(Level.WARNING,"Arithmetic error:", ex);
             }
             catch (IOException ex){
                 logger.log(Level.SEVERE, "Error during reading input!");

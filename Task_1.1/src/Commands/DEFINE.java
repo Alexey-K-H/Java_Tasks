@@ -1,24 +1,22 @@
 package Commands;
 
 import Context.Context;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import Exceptions.CalculatorException;
+import Exceptions.Wrong_amount_of_args_exception;
+import Exceptions.Wrong_format_value_exception;
 
 public class DEFINE implements Command {
-    private final static Logger logger = Logger.getLogger(DEFINE.class.getName());
 
     @Override
-    public void do_command(Context context, String[] arguments) {
+    public void do_command(Context context, String[] arguments) throws CalculatorException {
+        if(arguments.length != 3){
+            throw new Wrong_amount_of_args_exception("Wrong count of args for DEFINE command");
+        }
         try{
-            if(arguments.length != 3){
-                logger.log(Level.WARNING,"Not valid command");
-                return;
-            }
             context.put_variable(arguments[1], Double.parseDouble(arguments[2]));
         }
         catch (NumberFormatException ex){
-            logger.log(Level.WARNING,"Invalid value to variable");
+            throw new Wrong_format_value_exception("Wrong value for variable to DEFINE");
         }
     }
 }
