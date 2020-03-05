@@ -4,12 +4,14 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.IOException;
+
 public class FactoryTest extends Assert{
     Factory factory;
     Context context;
 
     @Before
-    public void setFactory() {
+    public void setFactory() throws IOException {
         factory = Factory.getInstance();
         context = new Context();
     }

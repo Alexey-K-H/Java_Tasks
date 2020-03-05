@@ -17,12 +17,10 @@ public class DIVISION implements Command {
             throw new Stack_size_exception("Not enough values in stack for DIVISION");
         }
 
-        try{
-            if(context.stack_size() >= 2){
-                context.push(context.pop() / context.pop());
-            }
-        }catch (ArithmeticException ex){
-            throw new ArithmeticException("Division by ZERO!");
+
+        if(context.stack_size() >= 2){
+            context.push(context.pop() / context.pop());
         }
+
     }
 }

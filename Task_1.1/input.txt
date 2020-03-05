@@ -9,7 +9,8 @@ PUSH b
 SQRT
 POP
 SQRT
+PUSH 0
 PUSH b
-SUM
+*
 PRINT
 stack

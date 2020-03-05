@@ -12,20 +12,15 @@ import java.util.logging.Logger;
 
 public class Calculator {
     private static Logger logger = Logger.getLogger(Calculator.class.getName());
-    private InputStream in;
+    Context context = new Context();
 
+    public Calculator(){}
 
-    public Calculator(InputStream input){
-        this.in = input;
-    }
-
-    public void ran_calc(){
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in));
+    public void ran_calc(InputStream input){
+        var bufferedReader = new BufferedReader(new InputStreamReader(input));
 
         String arguments;
         Command command;
-        Factory factory = Factory.getInstance();
-        Context context = new Context();
 
         logger.log(Level.INFO, "Start process...");
         while (true){
@@ -34,7 +29,7 @@ public class Calculator {
                     break;
                 }else{
                     logger.log(Level.INFO, "Create command..." + Arrays.toString(arguments.split(" ", 1)));
-                    command = factory.make_command(arguments.split(" "));
+                    command = Factory.getInstance().make_command(arguments.split(" "));
                     if(command != null){
                         command.do_command(context, arguments.split(" "));
                     }
@@ -48,6 +43,7 @@ public class Calculator {
             }
             catch (IOException ex){
                 logger.log(Level.SEVERE, "Error during reading input!");
+                break;
             }
         }
     }

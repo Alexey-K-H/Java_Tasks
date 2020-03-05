@@ -1,39 +1,40 @@
-мар. 02, 2020 9:58:46 PM Main main
+мар. 05, 2020 9:31:19 AM Main main
 INFO: Open input file...
-
-мар. 02, 2020 9:58:47 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Start process...
-мар. 02, 2020 9:58:47 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[# This is commentary, lol!!!]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[# Now we try this: a = 4, b = 9]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[DEFINE a 4]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[PUSH a]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[DEFINE b 9]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[PUSH b]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[# Then sqrt(b), pop(b), sqrt(a), push (b), sum]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[# We have to get 11.0...]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[SQRT]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[POP]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[SQRT]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
+INFO: Create command...[PUSH 0]
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[PUSH b]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
-INFO: Create command...[SUM]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
+INFO: Create command...[*]
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[PRINT]
-мар. 02, 2020 9:58:48 PM Calculator ran_calc
+мар. 05, 2020 9:31:19 AM Calculator ran_calc
 INFO: Create command...[stack]
-мар. 02, 2020 9:58:48 PM Factory make_command
+мар. 05, 2020 9:31:19 AM Factory make_command
 WARNING: Unexpected command: (stack) What do you mean?
-мар. 02, 2020 9:58:48 PM Main main
+мар. 05, 2020 9:31:19 AM Main main
 FINE: End of the application work.

@@ -12,7 +12,7 @@ public class Factory {
     public final Properties p;
     private final static Logger logger = Logger.getLogger(Factory.class.getName());
 
-    private Factory(){
+    private Factory() throws IOException {
         try{
             InputStream resource = Factory.class.getClassLoader().getResourceAsStream("Config.properties");
             p = new Properties();
@@ -22,11 +22,11 @@ public class Factory {
             }
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Cannot get configuration of commands");
-            throw new RuntimeException();
+            throw e;
         }
     }
 
-    public static Factory getInstance(){
+    public static Factory getInstance() throws IOException {
         if(factory == null){
             synchronized (Factory.class) {
                 if(factory == null) {
