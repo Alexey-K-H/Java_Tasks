@@ -1,0 +1,204 @@
+Apr 25, 2020 6:37:22 PM Factory.Main.Main main
+INFO: Get production plan....
+Apr 25, 2020 6:37:22 PM Factory.Main.Main main
+INFO: Successful!
+Apr 25, 2020 6:37:22 PM Factory.Main.Main main
+INFO: Start of the work:
+Apr 25, 2020 6:37:22 PM Factory.Main.Factory startWork
+INFO: Factory starts work!
+Apr 25, 2020 6:37:22 PM Factory.Main.Factory startWork
+INFO: Open storage!
+Apr 25, 2020 6:37:22 PM Factory.Main.Factory startWork
+INFO: Call to providers!
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Accessory provider:0 get started
+Apr 25, 2020 6:37:22 PM Factory.Main.Factory startWork
+INFO: Call to dealers
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Accessory storage
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Body Provider get started
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Accessory provider:3 get started
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Accessory provider:1 get started
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Accessory provider:4 get started
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Accessory provider:2 get started
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Engine Provider get started
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Accessory storage
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Accessory storage
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Body storage
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Accessory storage
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Accessory storage
+Apr 25, 2020 6:37:22 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Engine storage
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:1 get started
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:0 get started
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:1 has made order
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:2 get started
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:0 has made order
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:3 get started
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:2 has made order
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:3 has made order
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:4 get started
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:4 has made order
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:5 get started
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:5 has made order
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:6 get started
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:7 get started
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:7 has made order
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:8 get started
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:8 has made order
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:6 has made order
+Apr 25, 2020 6:37:22 PM Factory.Main.Factory startWork
+INFO: Start make orders!
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:9 get started
+Apr 25, 2020 6:37:22 PM Factory.Dealer.Dealer run
+INFO: Dealer:9 has made order
+Apr 25, 2020 6:37:22 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-3] get started.
+Apr 25, 2020 6:37:22 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-1] get started.
+Apr 25, 2020 6:37:22 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-2] get started.
+Apr 25, 2020 6:37:22 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-4] get started.
+Apr 25, 2020 6:37:22 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-5] get started.
+Apr 25, 2020 6:37:22 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-6] get started.
+Apr 25, 2020 6:37:22 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-7] get started.
+Apr 25, 2020 6:37:22 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-8] get started.
+Apr 25, 2020 6:37:23 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-9] get started.
+Apr 25, 2020 6:37:23 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-10] get started.
+Apr 25, 2020 6:37:23 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-3 has made a Car# 0 Engine#0 Body#0 Accessory#4
+Apr 25, 2020 6:37:23 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-3 add a Car#0 to car storage
+Apr 25, 2020 6:37:23 PM Factory.Dealer.Dealer run
+INFO: Dealer:1 get a Car#0
+Apr 25, 2020 6:37:23 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-3] get started.
+Apr 25, 2020 6:37:24 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Body storage
+Apr 25, 2020 6:37:25 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Engine storage
+Apr 25, 2020 6:37:25 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-1 has made a Car# 1 Engine#1 Body#1 Accessory#3
+Apr 25, 2020 6:37:25 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-1 add a Car#1 to car storage
+Apr 25, 2020 6:37:25 PM Factory.Dealer.Dealer run
+INFO: Dealer:9 get a Car#1
+Apr 25, 2020 6:37:25 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-1] get started.
+Apr 25, 2020 6:37:26 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Body storage
+Apr 25, 2020 6:37:27 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Accessory storage
+Apr 25, 2020 6:37:27 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Accessory storage
+Apr 25, 2020 6:37:27 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Accessory storage
+Apr 25, 2020 6:37:27 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Accessory storage
+Apr 25, 2020 6:37:27 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Accessory storage
+Apr 25, 2020 6:37:28 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Body storage
+Apr 25, 2020 6:37:28 PM Factory.Provider.Provider run
+INFO: Provider put a detail to class Factory.Details.Engine storage
+Apr 25, 2020 6:37:28 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-3 has made a Car# 2 Engine#2 Body#2 Accessory#8
+Apr 25, 2020 6:37:28 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-3 add a Car#2 to car storage
+Apr 25, 2020 6:37:28 PM Factory.Dealer.Dealer run
+INFO: Dealer:0 get a Car#2
+Apr 25, 2020 6:37:28 PM Factory.Worker.WorkerTask run
+INFO: Worker:[pool-1-thread-3] get started.
+Apr 25, 2020 6:37:29 PM Factory.Provider.Provider run
+INFO: Body Provider has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Dealer.Dealer run
+INFO: Dealer:6 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Provider.Provider run
+INFO: Engine Provider has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-9 Order denied
+Apr 25, 2020 6:37:29 PM Factory.Dealer.Dealer run
+INFO: Dealer:4 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-3 Order denied
+Apr 25, 2020 6:37:29 PM Factory.Dealer.Dealer run
+INFO: Dealer:9 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-2 Order denied
+Apr 25, 2020 6:37:29 PM Factory.Provider.Provider run
+INFO: Accessory provider:4 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-1 Order denied
+Apr 25, 2020 6:37:29 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-4 Order denied
+Apr 25, 2020 6:37:29 PM Factory.Dealer.Dealer run
+INFO: Dealer:0 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Provider.Provider run
+INFO: Accessory provider:3 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Provider.Provider run
+INFO: Accessory provider:2 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Provider.Provider run
+INFO: Accessory provider:1 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Provider.Provider run
+INFO: Accessory provider:0 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-7 Order denied
+Apr 25, 2020 6:37:29 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-5 Order denied
+Apr 25, 2020 6:37:29 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-8 Order denied
+Apr 25, 2020 6:37:29 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-10 Order denied
+Apr 25, 2020 6:37:29 PM Factory.Worker.WorkerTask run
+INFO: pool-1-thread-6 Order denied
+Apr 25, 2020 6:37:29 PM Factory.Dealer.Dealer run
+INFO: Dealer:8 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Dealer.Dealer run
+INFO: Dealer:7 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Dealer.Dealer run
+INFO: Dealer:5 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Dealer.Dealer run
+INFO: Dealer:3 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Dealer.Dealer run
+INFO: Dealer:2 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Dealer.Dealer run
+INFO: Dealer:1 has finished the work!
+Apr 25, 2020 6:37:29 PM Factory.Main.Main main
+INFO: Finish of the work!
